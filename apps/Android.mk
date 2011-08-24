@@ -55,9 +55,9 @@ LOCAL_SRC_FILES:= \
 
 #   cms.c ec.c s_server.c
 
-LOCAL_SHARED_LIBRARIES := \
-	libssl \
-	libcrypto 
+LOCAL_STATIC_LIBRARIES := \
+	ssl-static \
+	crypto-static 
 
 LOCAL_C_INCLUDES := \
 	$(NDK_PROJECT_PATH) \
